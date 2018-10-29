@@ -1,16 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
+import {AutoFocusDirective} from './auto-focus.directive';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+
+    declarations: [
+        AppComponent,
+        AutoFocusDirective
+    ],
+    imports: [
+        BrowserModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
+
 })
-export class AppModule { }
+export class AppModule {
+}
